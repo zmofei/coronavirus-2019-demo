@@ -55,8 +55,8 @@
 * Mapbox 官方集合图层DEMO https://docs.mapbox.com/mapbox-gl-js/example/cluster/
 
 
-* 调优前的热力图图层 https://zmofei.github.io/coronavirus-2019-demo/src/colorfill/colorfill-origin.html
-* 调优后的热力图图层  https://zmofei.github.io/coronavirus-2019-demo/src/colorfill/colorfill-optimized.html
+* 调优前的聚合图 https://zmofei.github.io/coronavirus-2019-demo/src/cluster/cluster-origin.html
+* 调优后的聚合图  https://zmofei.github.io/coronavirus-2019-demo/src/cluster/cluster-origin.html
 
 
 ### 2.4 分类聚合
@@ -67,6 +67,6 @@
 
 * 代码位置：`src/category/`
 
-* 聚合图Demo  https://zmofei.github.io/coronavirus-2019-demo/src/category/category-origin.html
+* 分类聚合图Demo  https://zmofei.github.io/coronavirus-2019-demo/src/category/category-origin.html
 
 ## 3. Q&A
