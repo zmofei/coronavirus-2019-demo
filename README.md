@@ -27,8 +27,8 @@
 * 热力图绘制原理 https://cdn.zhuwenlong.com/demos/heatmap.html
 * Mapbox热力图图层官方文档 https://docs.mapbox.com/mapbox-gl-js/style-spec/layers/#heatmap
   
-* 调优前的热力图图层 https://zmofei.github.io/coronavirus-2019-demo/src/heatmap/heatmap-origin.html
-* 调优后的热力图图层 https://zmofei.github.io/coronavirus-2019-demo/src/heatmap/heatmap-optimized.html
+* 调优前的热力图图层 https://zmofei.github.io/coronavirus-2019-demo/src/heatmap/heatmap-origin
+* 调优后的热力图图层 https://zmofei.github.io/coronavirus-2019-demo/src/heatmap/heatmap-optimized
 
 ![](docs/color.jpg)
 
@@ -40,8 +40,8 @@
 
 * 代码位置：`src/colorfill/`
 
-* 调优前的填色图 https://zmofei.github.io/coronavirus-2019-demo/src/colorfill/colorfill-origin.html
-* 调优后的填色图 https://zmofei.github.io/coronavirus-2019-demo/src/colorfill/colorfill-origin.html
+* 调优前的填色图 https://zmofei.github.io/coronavirus-2019-demo/src/colorfill/colorfill-origin
+* 调优后的填色图 https://zmofei.github.io/coronavirus-2019-demo/src/colorfill/colorfill-optimized
 
 ### 2.3 聚合图
 
@@ -55,7 +55,7 @@
 * Mapbox 官方集合图层DEMO https://docs.mapbox.com/mapbox-gl-js/example/cluster/
 
 
-* 调优前的聚合图 https://zmofei.github.io/coronavirus-2019-demo/src/cluster/cluster-origin.html
+* 调优前的聚合图 https://zmofei.github.io/coronavirus-2019-demo/src/cluster/cluster-origin
 * 调优后的聚合图  https://zmofei.github.io/coronavirus-2019-demo/src/cluster/cluster-optimized
 
 
@@ -67,6 +67,6 @@
 
 * 代码位置：`src/category/`
 
-* 分类聚合图Demo  https://zmofei.github.io/coronavirus-2019-demo/src/category/category-origin.html
+* 分类聚合图Demo  https://zmofei.github.io/coronavirus-2019-demo/src/category/category-origin
 
 ## 3. Q&A
