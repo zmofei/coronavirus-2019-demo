@@ -56,7 +56,7 @@
 
 
 * 调优前的聚合图 https://zmofei.github.io/coronavirus-2019-demo/src/cluster/cluster-origin.html
-* 调优后的聚合图  https://zmofei.github.io/coronavirus-2019-demo/src/cluster/cluster-origin.html
+* 调优后的聚合图  https://zmofei.github.io/coronavirus-2019-demo/src/cluster/cluster-optimized
 
 
 ### 2.4 分类聚合
