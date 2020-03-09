@@ -70,3 +70,5 @@
 * 分类聚合图Demo  https://zmofei.github.io/coronavirus-2019-demo/src/category/category-origin
 
 ## 3. Q&A
+
+有问题可以联系我们社区管理员，或者直接在issue中提出，我会尽力一一回答
