@@ -19,11 +19,11 @@ map.on('load', () => {
     // 添加圆圈
     map.addLayer(
         {
-            id: 'clusters',
+            id: 'clusters-layer',
             type: 'circle',
             source: 'cluster',
+            filter: ['>=', ['get', 'confirmedNum'], 1],
             paint: {
-                'circle-color': '#51bbd6',
                 'circle-radius': 10,
                 'circle-color': 'cyan'
             }

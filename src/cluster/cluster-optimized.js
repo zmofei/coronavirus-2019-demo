@@ -11,19 +11,18 @@ map.on('load', () => {
     map.addSource('cluster', {
         type: 'geojson',
         data: '../data/all.geojson',
-        cluster: true,
-        clusterRadius: 40,
-        clusterProperties: { 'confirmedNum': ["+", ["get", "confirmedNum"]] }
+        cluster: true, // 打开聚合
+        clusterRadius: 50, // 设置聚合的半径
+        clusterProperties: { 'confirmedNum': ["+", ["get", "confirmedNum"]] } // 设置聚合过程中需要处理的数据
     });
 
     map.addLayer(
         {
-            id: 'clusters',
+            id: 'clusters-layer',
             type: 'circle',
             source: 'cluster',
+            filter: ['>=', ['get', 'confirmedNum'], 1],
             paint: {
-                'circle-color': '#51bbd6',
-                // 'circle-radius': 5,
                 'circle-radius': [
                     'step',
                     ['get', 'confirmedNum'],

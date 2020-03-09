@@ -8,11 +8,6 @@ var map = new mapboxgl.Map({
 });
 
 map.on('load', () => {
-    // Geojson 文件
-    map.addSource('coronavirus', {
-        'type': 'geojson',
-        'data': '../data/all.geojson'
-    });
 
     // 地区多边形
     map.addSource('area-polygon', {
@@ -41,6 +36,7 @@ map.on('load', () => {
     })
 
 
+    // 点击打印瓦片信息
     map.on('click', (e) => {
         const features = map.queryRenderedFeatures(e.point);
         if (features.length > 0) {

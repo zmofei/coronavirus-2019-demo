@@ -8,11 +8,6 @@ var map = new mapboxgl.Map({
 });
 
 map.on('load', () => {
-    // Geojson 文件
-    map.addSource('coronavirus', {
-        'type': 'geojson',
-        'data': '../data/all.geojson'
-    });
 
     // 地区多边形
     map.addSource('area-polygon', {
@@ -26,6 +21,7 @@ map.on('load', () => {
         'source-layer': 'cn_sheng_polygon',
         'type': 'fill',
         "paint": {
+            // 使用Expression进行填色
             "fill-color": [
                 "match",
                 [
