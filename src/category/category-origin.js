@@ -40,14 +40,6 @@ map.on('load', () => {
         map.on('moveend', updateMarkers);
         updateMarkers();
     });
-
-    // debug
-    map.on('click', (e) => {
-        const features = map.queryRenderedFeatures(e.point);
-        if (features.length > 0) {
-            console.log(features);
-        }
-    });
 });
 
 function updateMarkers() {
@@ -68,7 +60,7 @@ function updateMarkers() {
         var marker = markers[id];
         // 如果自定义标记不存在创建一个
         if (!marker) {
-            var el = createDonutChart(props);
+            var el = createChart(props);
             marker = markers[id] = new mapboxgl.Marker({
                 element: el
             }).setLngLat(coords);
@@ -86,7 +78,7 @@ function updateMarkers() {
 }
 
 // 创建每一个Marke的HTML文件
-function createDonutChart(props) {
+function createChart(props) {
     var offsets = [];
     var counts = [
         props.confirmedNum,
@@ -108,7 +100,7 @@ function createDonutChart(props) {
     var paths = [];
 
     for (i = 0; i < counts.length; i++) {
-        paths.push(donutSegment(offsets[i] / total, (offsets[i] + counts[i]) / total, r, r0, colors[i]));
+        paths.push(segment(offsets[i] / total, (offsets[i] + counts[i]) / total, r, r0, colors[i]));
     }
 
 
@@ -127,7 +119,7 @@ function createDonutChart(props) {
     return el.firstChild;
 }
 
-function donutSegment(start, end, r, r0, color) {
+function segment(start, end, r, r0, color) {
     if (end - start === 1) end -= 0.00001;
     var a0 = 2 * Math.PI * (start - 0.25);
     var a1 = 2 * Math.PI * (end - 0.25);

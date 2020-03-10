@@ -10,7 +10,7 @@ var map = new mapboxgl.Map({
 
 map.on('load', () => {
 
-    // 地区多边形
+    // 地区多边形 可以通过Mapbox Studio上传并使用
     map.addSource('area-polygon', {
         'type': 'vector',
         'url': 'mapbox://zhuwenlong.bpyitk7f'
